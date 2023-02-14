@@ -1,0 +1,30 @@
+:root {
+    --primaryColor: #ff0000;
+    --secondaryColor: #f7bcf7;
+    --lightColor: #ffffff;
+    --bgColor-1: #171a1c;
+    --bgColor-2: #22282a;
+    --padding: 8%
+}
+
+body {
+    background-color: var(--bgColor-2);
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16px;
+    color: white;
+}
+
+fieldset {
+    padding: 20px;
+    width: 60%;
+    height: auto;
+    margin: 30px auto;
+    border-radius: 20px;
+    background-color: var(--bgColor-2);
+    border: 2px solid var(--bgColor-1);
+}
+
+.title span {
+    color: #ff0000;
+
+}

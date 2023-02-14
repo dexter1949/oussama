@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/contact_me.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <section class="home" id="home" style="height: 90px;">
+        <!-- __________________________________Nav_________________________________ -->
+        <nav style="display: flex; align-items: center;padding: 10px; ">
+            <a href="index.html" style="text-decoration: none;color: white;"><h2 style="margin: 0;">Barmaja<span>Online</span></h2></a>
+            <ul id="actions" style="margin:0;padding: 10px;">
+                <li><a href="#home">home</a></li>
+                <li><a href="#about_me">about Me</a></li>
+                <li><a href="#services">services</a></li>
+                <li><a href="#skills">skills</a></li>
+                <li><a href="#home">contact Me</a></li>
+            </ul>
+            <a href="#" class="btn">Subscribe</a>
+            <button id="menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </section>
+    <fieldset>
+        <div class="titre text-center" ><h1> Contact <span>Me</span></h1></div>
+        <div class="container">
+            <form action="">
+                <div>
+                    <label for="text" class="form-label">FULL NAME :</label>
+                    <input type="text" class="form-control" id="text" placeholder="Enter Your Name" name="text" required>
+                </div>
+                <div class="row">
+                    <div class="mb-3 mt-3 col">
+                        <label for="email" class="form-label">EMAIL :</label>
+                        <input type="email" class="form-control" id="email" placeholder="Enter Your Email" name="email" required>
+                    </div>
+                    <div class="mb-3 mt-3 col">
+                        <label for="ph" class="form-label">PHONE :</label>
+                        <input type="tel" class="form-control" id="ph" placeholder="Enter Number Phone" name="pswd" required>
+                    </div>
+                </div>
+                
+                <div class="form-check mb-3">
+                    <label class="form-check-label"></label>
+                        <input class="form-check-input" type="checkbox" name="remember"> Remember me
+                </div>
+                <div class="mb-3 mt-3">
+                    <label for="browser" class="form-label">NEEDED SERVICES :</label>
+                    <input class="form-control" list="browsers" name="browser" id="browser">
+                        <datalist id="browsers">
+                            <option value="Mobile Development">
+                            <option value="Web Development">
+                            <option value="Desktop Development">
+                            <option value="Architectural Development">
+                        </datalist>
+                </div>
+                <div class=" p-0" style="height: auto;">
+                    <label for="sms">Message</label>
+                    <textarea  name="message" id="sms" rows="10" placeholder="Your Message Here" style="width: 100%;outline: none;margin: 0;" class="rounded"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary" style="width: 100%;">Submit</button>
+            </form>
+    </fieldset>
+    <script src="js/script.js"></script>
+</body>
+</html>
